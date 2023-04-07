@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+:root {
+    --cor-primaria: #000;
+    --cor-secundaria: #fff;
+    --cor-menu-superior: rgb(0, 252, 0);
+    --cor-h2-menu-lateral: blue;
+}
+
+.menu {
+    background-color: var(--cor-primaria);
+}
+
+.menu div {
+    text-align: center;
+}
+
+.menu div img {
+    border-radius: 50%;
+    margin: 15px;
+    width: 70px;
+}
+
+.menu div ul {
+    display: flex;
+    justify-content: center; /*PARA CENTRALIZAR NA HORIZONTAL*/
+    padding-bottom: 15px;
+    gap: 25px;
+    list-style: none;
+}
+
+.menu-link {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    font-size: 20px;
+}
+
+.menu-link:hover {
+    text-shadow: 0px -20px 1px var(--cor-menu-superior);
+    transition: 0.5s; /*Tempo para que o efeito apareça*/
+}
+
+/****************************************/
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-lateral {
+    width: 30%;
+    background-color: #a59b9b;
+    box-shadow: -5px 0px 3px;
+}
+
+.galeria {
+    width: 69%;
+}
+
+.logo {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.logo img {
+    width: 100%;
+    margin: 30px 0;
+    border-radius: 10%;
+}
+
+.menu-lateral-links {
+    text-align: center;
+}
+
+.menu-lateral-links h1 {
+    font-size: 25px;
+
+}
+
+.menu-lateral-links h2 {
+    font-size: 18px;
+    color: var(--cor-h2-menu-lateral);
+    margin-top: 10px;
+}
+
+.menu-lateral-links ul {
+    list-style: none; /*Para tirar o pontinho do lado esquerdo do texto*/
+    margin: 25px 0;
+}
+
+.menu-lateral-links ul li {
+    margin: 15px 0;
+    text-transform: uppercase; /*Para Deixar o texto mais forte e maior*/
+    font-size: 15px;
+    font-weight: bold; /*Para Deixar o texto mais forte e maior*/
+}
+
+.menu-lateral-links a {
+    color: var(--cor-primaria);
+    text-decoration: none; /* para tirar linha de baixo do texto*/
+}
+
+.menu-lateral-links a:hover {
+    text-decoration: underline; /*Para colocar a linha de baixo do texto*/
+    color: var(--cor-h2-menu-lateral);
+}
+
+.galeria h1 {
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.galeria-img01 {
+    margin: 5px 0;
+    margin-left: 15px;
+}
+
+.galeria-img01 img {
+    width: 100%;
+}
+
+.galeria-img02 {
+    justify-content: space-between;
+    display: flex;
+    margin: 5px 0;
+    margin-left: 15px;
+}
+
+.galeria-img02 img {
+    width: 10%;
+
+}
+
+.galeria-img03 {
+    justify-content: space-between;
+    display: flex;
+    margin: 5px 0;
+    margin-left: 15px;
+}
+
+.galeria-img03 img {
+    width: 23%;
+}
+
+.rodape {
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+
+.rodape li {
+    list-style: none;
+    font-size: 15px;
+}
+
+.rodape ul {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px auto;
+}

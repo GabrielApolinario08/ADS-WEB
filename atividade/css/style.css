@@ -1,0 +1,391 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+/*menu*/
+
+nav div {
+    display: flex;
+    justify-content: space-between;
+    width: 97%;
+    margin: 0 auto;
+}
+
+.esquerda {
+    display: flex;
+    gap: 20px;
+    justify-content: left;
+    padding: 7px;
+    align-items: center;
+}
+
+.esquerda h1 {
+    font-size:20px;
+    font-weight: inherit;
+    color: rgb(0, 0, 0);
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: grey;
+    font-weight: lighter;
+}
+
+/*TRANSIÇÃO*/
+nav ul li a:hover {
+    font-size: 20px;
+    color: black;
+    transition: .5s;
+}
+
+.home {
+    text-transform: uppercase;
+    color: black;
+}
+
+.direita {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.caixa {
+    padding: 8px 5px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: rgb(194, 189, 189) solid 1px;
+    font-size: 17px;
+}
+
+.botao {
+    padding: 8px 15px;
+    margin: 5px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 195, 255);
+    color: rgb(0, 195, 255);
+}
+
+/*TRANSIÇÃO*/
+.botao:hover {
+    background-color: black;
+    transition: .5s;
+}
+
+/*Cabeçalho*/
+header {
+    background-image: url(../img/img-cabecalho.jpg);
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+header div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+header div h1 {
+    font-size: 80px;
+    font-weight: lighter;  
+}
+
+header div h2 {
+    font-size: 30px;
+    padding: 20px 0;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+
+.botao-cabecalho {
+    background-color: blueviolet;
+    padding: 11px 41px;
+    font-size: 18px;
+    color: white;
+    border: none;
+}
+
+.botao-cabecalho2 {
+    padding: 10px 40px;
+    font-size: 18px;
+    background: none;
+    border: 1px solid white;
+    color: white;
+}
+
+/*TRANSIÇÃO*/
+.botao-cabecalho:hover {
+    padding: 15px 45px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.botao-cabecalho2:hover {
+    padding: 15px 45px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+
+
+/*corpo do site*/
+
+.sec01{
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.sec01 div img {
+    height: 100%;
+    width: 90%;
+
+    border-radius: 50%;
+}
+
+div.texto {
+    width: 30%;
+    padding: 0 50px;
+}
+
+div.texto h1 {
+    font-size: 30px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+div.texto p {
+    line-height: 1.5;
+    margin: 15px 0;
+    text-align: justify;
+    color: rgb(161, 159, 159);
+}
+
+.botao-sec01 {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.botao-sec01 input {
+    padding: 11px 41px;
+    font-size: 18px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+}
+
+/*TRANSIÇÃO*/
+.botao-sec01 input:hover{
+    padding: 15px 45px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+main {
+    background-color: rgb(236, 234, 234);
+}
+
+.sec02 {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sec02 div img {
+    border-radius: 50%;
+    width: 90%;
+
+}
+
+.sec02 div p {
+    color: black;
+}
+
+.sec03 {
+    background-image: url(../img/vertical.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    padding: 100px 0;
+}
+
+.sec03-div {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.sec03-div h1 {
+    font-size: 35px;
+    font-weight: lighter;
+    margin: 50px 0;
+}
+
+.sec03-div p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.divPai-sec04 {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.divFilho-sec04 {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.divFilho-sec04 h1 {
+    font-size: 40px;
+    font-weight: lighter;
+    margin: 50px 0;
+}
+
+.divFilho-sec04 p {
+    line-height: 1.5;
+    text-align: justify;
+    font-size: 20px;
+}
+
+.divImg-sec04 {
+    background-image: url(../img/quadrado.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 70vh;
+    margin: 50px auto;
+}
+
+.sec05 div {
+    display: flex;
+    height: 50%;
+}
+
+.sec05-img {
+    width: 25%;
+    margin: 0;
+    padding: 0;
+}
+
+/*Rodapé*/
+
+footer {
+    background-color: rgb(51, 51, 51);
+    color: white;   
+    text-align: end;
+}
+
+footer div {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+footer div h2 {
+    font-size: 17px;
+    font-weight: lighter;
+}
+
+footer div h1 {
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+
+/*Responsividade*/
+@media screen and (max-width:1160px){
+    .sec01 {
+        display: block;
+    }
+
+    .img {
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    div.texto {
+        margin: 0 auto;
+        width: 50%;
+        font-size: 24px;
+    }
+
+    .botao-sec01 input {
+        margin: 0 auto;
+        font-size: 25px;
+    }
+
+    .sec02 {
+        display: block;
+    }
+
+    .sec03 {
+        font-size: 24px;
+    }
+
+    .sec04 p {
+        font-size: 24px;
+    }
+
+    .divPai-sec04 {
+        width: 100%;
+    }
+
+    .divFilho-sec04 {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:720px) {
+    nav div {
+        display: block;
+    }
+
+    .esquerda, .direita {
+        display: flex;
+        font-size: 20px;
+        justify-content: center;
+    }
+
+    .sec05 div {
+        display: block;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        border: 2px solid red;
+    }
+
+    .sec05 div img {
+        width: 70%;
+    }
+
+    .divImg-sec04 {
+        width: 90%;
+        height: 100vh;
+    }
+}

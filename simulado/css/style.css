@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+:root {
+    --cor1: #c0beb7;
+    --cor2: #b2b0a7;
+    --cor3: #2a272c;
+    --cor4: #e3e1e4;
+    --cor5: #e3dfca;
+    --cor6: #7f7c67;
+    --cor7: #7a7788;
+    --cor8: #5e5156;
+    --cor9: #676549;
+    --cor10: #8f8189;
+    --cor11: #545c54;
+
+}
+
+
+/* Menu */
+nav {
+    display: flex;
+    background-color: var(--cor3);
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 7px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    color: var(--cor4);
+    gap: 50px;
+}
+
+nav li:hover {
+    text-shadow: .5px .5px 0 var(--cor4);
+    color: var(--cor2);
+}
+
+nav img {
+    width: 5%;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/*cabeçalho*/
+
+header {
+    background-image: url(../img/samurai3.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    display: flex;
+    background-size: cover;
+    background-position: top left;
+    align-items: center;
+}
+
+header div {
+    margin-left: 50px;
+    color: var(--cor3);
+}
+
+header div h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    border-bottom: 2px solid var(--cor3);
+    line-height: .7;
+    text-shadow: 2px 1px 1px var(--cor4), -2px -2px 2px var(--cor4);
+}
+
+header div h2 {
+   text-align: end;
+}
+
+/*Corpo/conteúdo*/
+
+main {
+    background-color: var(--cor4);
+}
+
+.sec1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+
+.h1 {
+    text-transform: uppercase;
+    color: var(--cor3);
+    padding: 15px;
+    background-color: var(--cor2);
+    border-left: solid 4px var(--cor3);
+}
+
+.sec1 div h2 {
+    text-align: end;
+    margin: 15px 0;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.div2 {
+    margin: 20px 0;
+}
+
+.div2 .subtitulo {
+    font-weight: normal;
+    font-size: 22px;
+    font-style: normal;
+    text-align: left;
+    text-indent: 30px;
+    color: var(--cor3);
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.p {
+    text-indent: 30px;
+    line-height: 32px;
+    text-align: justify;
+}
+
+/*Cards*/
+
+.sec2 {
+    background-color: var(--cor2);
+    padding: 30px;
+    margin-top: 25px;
+    text-align: center;
+}
+
+.h3-card {
+    color: var(--cor3);
+    font-size: 20px;
+}
+
+.container-card {
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px 0 ;
+    display: flex;
+    justify-content: space-between;
+}
+
+.todo-card {
+    width: 30%;
+    text-align: justify;
+    text-indent: 50px;
+    border: 1px solid var(--cor11);
+    border-radius: 5px;
+}
+
+.todo-card2 {
+    width: 30%;
+    text-align: justify;
+    text-indent: 50px;
+    border: 1px solid var(--cor11);
+    border-radius: 5px;
+}
+
+.img-card1 {
+    height: 25vh;
+    display: flex;
+    background-image: url(../img/neon-samurai4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;   
+}
+
+.texto-card {
+    font-size: small;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.footer-card {
+    padding: 15px 0;
+    text-align: right;
+    text-align: 0;
+}
+
+
+.footer-card a {
+    background-color: var(--cor3);
+    color: var(--cor4);
+    text-decoration: none;
+    font-size: small;
+    padding: 10px 25px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.botao:hover {
+    background-color: var(--cor11);
+    transition: .3s;
+    width: 8.2vw;
+    height: 5.2vh;
+}
+
+.img-card2 {
+    height: 25vh;
+    background-image: url(../img/neon-samurai1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.img-card3 {
+    height: 25vh;
+    background-image: url(../img/neon-samurai6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/*Rodapé*/
+
+.rodape {
+    background-color: var(--cor3);
+    height: 7vh;
+    display: flex;
+    align-items: center;
+}
+
+.rodape-ul {
+    display: flex;
+    color: var(--cor4);
+    gap: 15px;
+    list-style-type: none;
+    font-size: 12px;
+    width: 80%;
+    margin: 0 auto;
+    justify-content: right;
+}
+
+/*responsividade*/
+
+@media screen and (max-width:780px) {
+        .todo-card {
+            width: 47%;
+        }
+
+        .todo-card2 {
+            display: none;
+        }
+}
+
+@media screen and (max-width:600px) {
+    .todo-card2 {
+        display: block;
+        width: 100%;
+    }
+
+    .todo-card {
+        width: 100%;
+        margin: 15px auto;
+    }
+
+    .container-card {
+        display: block;
+    }
+
+    body {
+        background-color: var(--cor4);
+    }
+
+    header {
+        background-image: url(../img/samurai3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        transition: 0.5s;
+    }
+}
