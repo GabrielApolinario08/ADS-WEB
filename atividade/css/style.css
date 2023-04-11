@@ -90,6 +90,7 @@ header {
     background-position: center;
     display: flex;
     align-items: center;
+    background-attachment: fixed;
 }
 
 header div {
@@ -226,6 +227,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
+    background-attachment: fixed;
     padding: 100px 0;
 }
 
